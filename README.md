@@ -3,6 +3,7 @@
 # Linear Regression
 
 - [Model Representation](model_representation.ipynb)
+- [Cost Function](cost_function.ipynb)
 
 ## License
 
