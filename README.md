@@ -5,6 +5,7 @@
 - [Model Representation](model_representation.ipynb)
 - [Cost Function](cost_function.ipynb)
 - [Gradient Descent for Linear Regression](gradient_descent_for_linear_regression.ipynb)
+- [Multiple Linear Regression](multiple_variable_linear_regression.ipynb)
 
 ## License
 
