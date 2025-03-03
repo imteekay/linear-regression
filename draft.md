@@ -69,3 +69,17 @@
   - Big alpha: large steps and the cost function can not reach the most optimized weight
   - range of values: 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1
 ```
+
+## Vectorization
+
+- [ ]  element-wise operations
+    
+    ```python
+    a = np.array([ 1, 2, 3, 4])
+    b = np.array([-1,-2, 3, 4])
+    print(f"Binary operators work element wise: {a + b}")
+    # Binary operators work element wise: [0 0 6 8]
+    ```
+    
+- [ ]  vector dot-product: input x times the weight vector
+- [ ]  speed up the process
