@@ -83,3 +83,28 @@
     
 - [ ]  vector dot-product: input x times the weight vector
 - [ ]  speed up the process
+
+## Multiple Variable Linear Regression
+
+- [ ]  New problem: multiple variables
+    - [ ]  features: size number of bedrooms, number of floors, age of home
+    - [ ]  output: price
+    - [ ]  example
+    
+    ```python
+    X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
+    y_train = np.array([460, 232, 178])
+    ```
+    
+    - [ ]  show the latex example for the matrix
+- [ ]  parameters
+    - [ ]  bias is a scalar value, a single value
+    - [ ]  weight should be a vector of n values, where each weight is for a given feature (n features, n is 4 for this dataset)
+- [ ]  model prediction
+    - [ ]  illustrated as a function: f(x) = w0x0 + w1x1 + …
+    - [ ]  illustrated as a vector dot product: f(x) = W X + b
+- [ ]  showing a single prediction
+    - [ ]  fixed bias and weights and 1 example
+    - [ ]  loop through the n features and sum the product of x and w and then add b
+    - [ ]  this gives a prediction for the chosen parameters
+    - [ ]  single prediction using vectorization (dot product)
