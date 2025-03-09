@@ -108,3 +108,30 @@
     - [ ]  loop through the n features and sum the product of x and w and then add b
     - [ ]  this gives a prediction for the chosen parameters
     - [ ]  single prediction using vectorization (dot product)
+- [ ]  Compute the cost for multiple variables
+    - [ ]  equation for the cost J = 1/2m sum(f(x) - y)^2
+    - [ ]  show f(x) equation: f(x) = wx + b
+        - [ ]  w and x are vectors to support multiple variables
+    - [ ]  cost implementation using loop
+    - [ ]  cost implementation using vectorization
+- [ ]  Multiple variables gradient descent
+    - [ ]  The first part is to compute the gradients (derivative) for the weight and bias
+        - [ ]  one weight for each variable (or feature)
+        - [ ]  update each weight in the gradient descent. show the update repetition math formula
+        - [ ]  math formula on how to compute the cost function J gradient
+        - [ ]  show the non-vectorized code
+            - [ ]  for each training example, we should compute the error (m examples)
+            - [ ]  compute the gradient for the weight: we need to do it for each feature (n features)
+            - [ ]  compute the gradient for the bias
+        - [ ]  vectorized code
+            - [ ]  compute the error for all examples in one operation
+            - [ ]  compute the gradient for the bias in one operation
+            - [ ]  compute the gradient for the weight for all features in one operation
+    - [ ]  In gradient descent, we have a loop that will iterate `num_iters` times, where `num_iters` is a hyperparameter we can pass to the model
+        - [ ]  in each step of the loop, we get the gradients and update the bias and the weight
+        - [ ]  in this loop, we can store the cost history in an array passing the `X`, `Y`, `w`, and `b` to the `cost_function`
+        - [ ]  show the cost getting smaller with more iterations
+        - [ ]  prediction for the examples using the new parameters b and w:
+            prediction: 426.19, target value: 460
+            prediction: 286.17, target value: 232
+            prediction: 171.47, target value: 178
